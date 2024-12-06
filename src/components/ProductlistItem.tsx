@@ -23,27 +23,29 @@ const ProductlistItem = ({product} : ProductlistItemProps) => {
   )
 }
 
-export default ProductlistItem
+export default ProductlistItem;
 
 const styles = StyleSheet.create({
    
-    container: {
-        marginTop: 20,
-        marginHorizontal: 10,
-        backgroundColor: "white",
-        padding: 10,
-        borderRadius: 10,
-      },
-      title: {
-        fontSize: 18,
-        fontWeight: "600",
-        marginVertical: 10,
-      },
-      price: {
-        color: Colors.light.tint,
-      },
-      image: {
-        width: "40%",
-        aspectRatio: 1,
-      },
+  container: {
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 10,
+    flex: 1,
+    maxWidth: '50%',
+  },
+  image: {
+    width: '100%',
+    aspectRatio: 1,
+  },
+  title: {
+    fontWeight: '600',
+    fontSize: 18,
+    marginVertical: 10,
+  },
+  price: {
+    color: Colors.light.tint,
+    fontWeight: 'bold',
+    marginTop: 'auto',
+  },
 });
