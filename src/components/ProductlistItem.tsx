@@ -13,7 +13,7 @@ export const defaultPizzaImage =
 
 const ProductlistItem = ({ product }: ProductlistItemProps) => {
   return (
-    <Link href={`/${product.id}`} asChild>
+    <Link href={`/menu/${product.id}` as unknown as any} asChild>
       <Pressable style={styles.container}>
         <Image
           style={styles.image}
